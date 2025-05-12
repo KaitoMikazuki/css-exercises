@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -89,3 +90,31 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+
+
+
+/* SOLUTIONS */
+li {
+  list-style: none;
+}
+
+
+/* HEADER SECTION */
+.header{
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  align-items: center;
+}
+
+.menu > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: start;
+}
+
+.logo{
+  justify-self: start;
+}
+
+
