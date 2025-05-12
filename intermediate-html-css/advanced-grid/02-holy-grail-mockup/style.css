@@ -94,14 +94,26 @@
 
 
 
+
+
+
+
+
+
 /* SOLUTIONS */
 li {
   list-style: none;
 }
 
+.container{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr 15fr 1fr;
+}
 
 /* HEADER SECTION */
 .header{
+  grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 2fr 5fr;
   align-items: center;
@@ -110,11 +122,26 @@ li {
 .menu > ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-content: start;
 }
 
 .logo{
   justify-self: start;
+}
+
+/* sidebar section */
+.sidebar{
+  grid-row: 2 / 4;
+  display: grid;
+  
+  gap: 64px;
+}
+
+/* navigation section */
+.nav > ul{
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
 }
 
 
