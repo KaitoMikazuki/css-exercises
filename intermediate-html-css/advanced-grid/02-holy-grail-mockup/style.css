@@ -100,12 +100,14 @@
 
 
 
+
 /* SOLUTIONS */
 li {
   list-style: none;
 }
 
 .container{
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 100px 50px 1fr 50px;
@@ -152,3 +154,6 @@ li {
   gap: 16px;
 }
 
+.footer{
+  grid-column: 1 / -1;
+}
