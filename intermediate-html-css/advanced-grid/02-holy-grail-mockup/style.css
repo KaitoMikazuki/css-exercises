@@ -108,7 +108,7 @@ li {
 .container{
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 15fr 1fr;
+  grid-template-rows: 100px 50px 1fr 50px;
 }
 
 /* HEADER SECTION */
@@ -132,7 +132,7 @@ li {
 .sidebar{
   grid-row: 2 / 4;
   display: grid;
-  grid-template-rows:repeat(4, 200px);
+  grid-template-rows:repeat(4, 1fr);
   gap: 64px;
 }
 
@@ -140,14 +140,15 @@ li {
 .nav > ul{
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
 }
 
 /* article section */
 .article {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  grid-template-rows: repeat(auto-fill, 1fr);
   gap: 16px;
 }
+
